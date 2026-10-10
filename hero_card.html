@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laxmi Pujan Box Details - Ishavarya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Inria+Serif&family=Jacques+Francois&family=Jaldi&family=LINE+Seed+JP:wght@700&family=Literata:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Top Bar / Navigation -->
+    <header class="about-bar">
+        <a class="about-bar__back" href="index.html" aria-label="Go back">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </a>
+        <a class="about-bar__brand" href="index.html">ई  श्  व  र्य</a>
+        <a href="cart.html" class="about-bar__link" aria-label="Shopping bag">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+    </header>
+
+    <main class="page">
+        <!-- Main Product Detail Section (Matches Picture 1 Top) -->
+        <section class="product-detail">
+            <div class="product-detail__grid">
+                <div class="product-detail__img-wrap">
+                    <img src="./images/LakshmiPujan.png" alt="Laxmi Pujan Box" />
+                </div>
+                <div class="product-detail__info">
+                    <h1 class="product-detail__title">Laxmi Pujan Box ( 31 Items )</h1>
+                    <p class="product-detail__desc">Complete puja samagri for a prosperous Diwali</p>
+                    <div class="product-detail__price-row">
+                        <span class="product-detail__price">₹ 599</span>
+                        <span class="product-detail__coin-badge">🪔 "माँ लक्ष्मी का आशीर्वाद, ढेर सारे शगुन के साथ तुम्हारा"</span>
+                    </div>
+
+                    <div class="product-detail__features">
+                        <div class="feature-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            <span>30 essential Items</span>
+                        </div>
+                        <div class="feature-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                            <span>Pure</span>
+                        </div>
+                        <div class="feature-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <span>Secure</span>
+                        </div>
+                    </div>
+
+                    <!-- Quantity and Buy Options -->
+                    <div class="product-detail__actions-row">
+                        <div class="qty" role="group" aria-label="Quantity">
+                            <button type="button" id="dec-qty" aria-label="Decrease quantity">&minus;</button>
+                            <output id="qty-val">1</output>
+                            <button type="button" id="inc-qty" aria-label="Increase quantity">+</button>
+                        </div>
+                        <button type="button" class="btn" id="add-to-bag-btn">Add to cart</button>
+                        <button type="button" class="btn btn--ghost" id="buy-now-btn">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Items Inside the Box Section -->
+        <section class="box-contents-section">
+            <div class="section-header-row">
+                <h2>Items inside the box</h2>
+                <button type="button" class="btn btn--small view-all-trigger" id="view-all-btn">View all</button>
+            </div>
+            <div class="box-preview-grid">
+                <div class="modal-card"><img src="./images2/gulal.png" alt="गुलाल"><span>गुलाल</span></div>
+                <div class="modal-card"><img src="./images2/haldi.png" alt="हल्दी"><span>हल्दी</span></div>
+                <div class="modal-card"><img src="./images2/ashtagandha.png" alt="अष्टगंध"><span>अष्टगंध</span></div>
+                <div class="modal-card"><img src="./images2/bukka.png" alt="बुक्का"><span>बुक्का</span></div>
+                <div class="modal-card"><img src="./images2/kumkum.png" alt="कुमकुम"><span>कुमकुम</span></div>
+                <div class="modal-card"><img src="./images2/agarbatti.png" alt="अगरबत्ती"><span>अगरबत्ती</span></div>
+            </div>
+        </section>
+
+        <!-- Add More to Your Puja Section -->
+        <section class="box-contents-section" style="margin-top: 40px;">
+            <div class="section-header-row">
+                <h2>Add more to your puja</h2>
+            </div>
+            <div class="box-preview-grid">
+                <div class="modal-card"><img src="./images2/attar.png" alt="इत्र"><span>इत्र</span></div>
+                <div class="modal-card"><img src="./images2/ubtan.png" alt="उबटन"><span>उबटन</span></div>
+                <div class="modal-card"><img src="./images2/agarbatti.png" alt="अगरबत्ती"><span>अगरबत्ती</span></div>
+                <div class="modal-card"><img src="./images2/5diyas.png" alt="5 दीया"><span>5 दीया</span></div>
+                <div class="modal-card"><img src="./images2/ghee_baati.png" alt="घी बाती"><span>घी बाती</span></div>
+                <div class="modal-card"><img src="./images2/kapus_batti.png" alt="कपास बत्ती"><span>कपास बत्ती</span></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- All Items Modal (Popup for all 31 items when clicking View All) -->
+    <div id="all-items-modal" class="modal" hidden>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>All Items in Box (31 Items)</h2>
+                <button type="button" class="modal__close" id="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal__grid">
+                <!-- Populated dynamically through site.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include your main script file -->
+    <script src="site.js"></script>
+    <script>
+        // Specific page interactivity for quantity increments and bag actions
+        document.addEventListener("DOMContentLoaded", function() {
+            let qty = 1;
+            const output = document.getElementById("qty-val");
+            document.getElementById("inc-qty").addEventListener("click", () => {
+                if (qty < 10) qty++, output.textContent = qty;
+            });
+            document.getElementById("dec-qty").addEventListener("click", () => {
+                if (qty > 1) qty--, output.textContent = qty;
+            });
+
+            // Add to bag functionality linking with site.js store logic
+            document.getElementById("add-to-bag-btn").addEventListener("click", () => {
+                if (window.Ishavarya && window.Ishavarya.addToCart) {
+                    window.Ishavarya.addToCart({
+                        id: "laxmi-pujan-box",
+                        name: "Laxmi Pujan Box (31 Items)",
+                        hi: "लक्ष्मी पूजन बॉक्स",
+                        price: 599,
+                        img: "./images/LakshmiPujan.png"
+                    }, qty);
+                    window.Ishavarya.toast("Laxmi Pujan Box added to bag!");
+                }
+            });
+
+            document.getElementById("buy-now-btn").addEventListener("click", () => {
+                if (window.Ishavarya && window.Ishavarya.addToCart) {
+                    window.Ishavarya.addToCart({
+                        id: "laxmi-pujan-box",
+                        name: "Laxmi Pujan Box (31 Items)",
+                        hi: "लक्ष्मी पूजन बॉक्स",
+                        price: 599,
+                        img: "./images/LakshmiPujan.png"
+                    }, qty);
+                    window.location.href = "cart.html";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
