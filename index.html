@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ishavarya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Inria+Serif&family=Jacques+Francois&family=Jaldi&family=LINE+Seed+JP:wght@700&family=Literata:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="hero">
+        <div class="banner">
+            <p class="banner__welcome">Welcome to</p>
+            <h1 class="banner__title">ISHAVARYA</h1>
+        </div>
+
+        <header class="nav">
+            <a class="nav__logo" href="#" aria-label="Ishavarya home">
+                <img src="./images/logo.png" alt="Ishavarya" />
+            </a>
+
+            <nav class="nav__links" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="#">Pooja Samagri</a>
+                <a href="#">Exclusive kits</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+            </nav>
+
+            <div class="nav__actions">
+                <form class="search" id="site-search" role="search" autocomplete="off">
+                    <input type="search" id="search-input" placeholder="Search products…" aria-label="Search products" />
+                    <button type="submit" aria-label="Search">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/>
+            </svg>
+          </button>
+                </form>
+                <a href="account.html" class="nav__icon" aria-label="My account">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+                </a>
+                <a href="cart.html" class="nav__icon" aria-label="Shopping bag">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+                    <span class="cart-count" data-cart-count hidden>0</span>
+                </a>
+            </div>
+        </header>
+
+        <a class="badge" href="#">Diwali Special Kits</a>
+    </section>
+
+    <main>
+        <!-- Festival kits -->
+        <section class="festivals" aria-label="Festival kits">
+            <div class="festivals__grid">
+                <a class="festival" href="hero_card.html">
+                    <h2 class="festival__title"><span class="en" id="1">Lakshmi Pujan</span><span class="hi" id="1">लक्ष्मी पूजन</span></h2>
+                    <div class="festival__img" id="1"><img src="./images/LakshmiPujan.png" id="1" alt="Tulsi Pujan kit" loading="lazy" onerror="this.remove()" /></div>
+                </a>
+                <a class="festival" href="#">
+                    <h2 class="festival__title"><span class="en">Sold Out</span><span class="hi" id="2">तुलसी पूजन  </span> </span>
+                        </span>
+                    </h2>
+                    <div class="festival__img" id="2"><img src="./images/Tulsipujan.png" id="2" alt="Lakshmi Pujan kit" loading="lazy" onerror="this.remove()" /></div>
+                </a>
+                <a class="festival" href="#">
+                    <h2 class="festival__title"><span class="en">Sold Out</span><span class="hi" id="3">गोवर्धन पूजन</span></h2>
+                    <div class="festival__img" id="3"><img src="./images/Govardhan.png" id="3" alt="Govardhan Pujan kit" loading="lazy" onerror="this.remove()" /></div>
+                </a>
+                <a class="festival" href="#">
+                    <h2 class="festival__title"><span class="en">Sold Out</span><span class="hi" id="4">धनतेरस</span></h2>
+                    <div id="4" class="festival__img festival__img--plain" id="4"><img src="./images/Dhantera.png" alt="Dhanteras kit" loading="lazy" onerror="this.remove()" /></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Brand band -->
+        <div class="band" aria-hidden="true">ई&nbsp;&nbsp; श्&nbsp;&nbsp; व&nbsp;&nbsp; र्य</div>
+
+        <!-- Products -->
+        <section class="products" id="products" aria-label="Our products">
+            <div class="products__intro">
+                <p class="products__tagline">Make your home full of positive vibes</p>
+                <h2 class="products__heading">Get our products now</h2>
+            </div>
+
+            <ul class="products__row">
+                <li class="product" data-id="diya" data-name="Diya" data-hi="दीपक" data-price="99" data-img="assets/products/diya.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/5diyas.png" alt="Diya" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Diya</span><span class="hi">दीपक</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet </p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Diya to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="aarti-book" data-name="Aarti book" data-hi="आरती की किताब" data-price="149" data-img="assets/products/aarti-book.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/aartiBook.png" alt="Aarti book" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Aarti book</span><span class="hi">आरती की किताब</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Aarti book to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="kalava" data-name="Kalava" data-hi="कलावा" data-price="49" data-img="assets/products/kalava.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/kalava.png" alt="Kalava" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Kalava</span><span class="hi">कलावा</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Kalava to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="swastika" data-name="Swastika" data-hi="स्वस्तीका" data-price="79" data-img="assets/products/swastika.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/shubhLabh.jpeg" alt="Swastika" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Swastika</span><span class="hi">स्वस्तीका</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Swastika to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="ghee-baati" data-name="Ghee-baati" data-hi="घी बाती" data-price="129" data-img="assets/products/ghee-baati.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/ghee_baati.png" alt="Ghee-baati" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Ghee-baati</span><span class="hi">घी बाती</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Ghee-baati to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="dhup" data-name="Dhup" data-hi="धुप" data-price="89" data-img="assets/products/dhup.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/dhup.png" alt="Dhup" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Dhup</span><span class="hi">धुप</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Dhup to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="haldi" data-name="Haldi" data-hi="हल्दी" data-price="59" data-img="assets/products/haldi.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/haldi.png" alt="Haldi" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Haldi</span><span class="hi">हल्दी</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Haldi to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="kumkum" data-name="Kumkum" data-hi="कुमकुम" data-price="59" data-img="assets/products/kumkum.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/kumkum.png" alt="Kumkum" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Kumkum</span><span class="hi">कुमकुम</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Kumkum to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="jhadu" data-name="Zadu" data-hi="झाड़ू" data-price="119" data-img="assets/products/jhadu.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/zaddu.png" alt="Zadu" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Zadu</span><span class="hi">झाड़ू</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Zadu to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="ubtan" data-name="Ubtan" data-hi="उबटन" data-price="199" data-img="assets/products/ubtan.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/ubtan.png" alt="Ubtan" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Ubtan</span><span class="hi">उबटन</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Ubtan to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product" data-id="bukka" data-name="Bukka" data-hi="बुक्का" data-price="69" data-img="assets/products/bukka.png">
+                    <a href="#">
+                        <div class="product__img"><img src="./images2/bukka.png" alt="Bukka" loading="lazy" onerror="this.remove()" /></div>
+                        <div class="product__label"><span class="en">Bukka</span><span class="hi">बुक्का</span></div>
+                    </a>
+                    <div class="product__buy">
+                        <p class="product__price">Not deliverable yet</p>
+                        <div class="product__actions">
+                            <button type="button" class="btn-add" data-add>Add to bag</button>
+                            <button type="button" class="btn-heart" data-wish aria-pressed="false" aria-label="Add Bukka to wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20.500s-7.500-4.600-7.500-10A4.500 4.500 0 0 1 12 7.600a4.500 4.500 0 0 1 7.500 2.900c0 5.400-7.500 10-7.500 10Z"/></svg></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="products__empty" id="search-empty" hidden>No products match your search.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <h3>Festive Menu</h3>
+                <ul>
+                    <li><a href="#">Diwali collection</a></li>
+                    <li><a href="#">Best-seller</a></li>
+                    <li><a href="#">What’s new</a></li>
+                    <li><a href="#">Pooja essential</a></li>
+                    <li><a href="#">Shop all</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="privacyPolicy.pdf">Term &amp; service</a></li>
+                    <li><a href="privacyPolicy.pdf">Privacy policy</a></li>
+                    <li><a href="privacyPolicy.pdf">Shipping policy</a></li>
+                    <li><a href="rre.pdf">Return, refund &amp; exchange policy</a></li>
+                    <li><a href="privacyPolicy.pdf">Cancellation policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col footer__col--social">
+                <h3>Quick links</h3>
+                <div class="social">
+                    <a href="https://www.instagram.com/ishavarya_com?exln=MTFydWxuaTV6NjkxNg%3D%3D&utm_source=qr" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://www.facebook.com/share/1A1czptqS3/?mibextid=wwXIfr" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M13.5 20v-7h2.5l.4-3h-2.9V8.4c0-.9.3-1.4 1.5-1.4H16V4.3A18 18 0 0 0 14 4.2c-2 0-3.5 1.2-3.5 3.5V10H8v3h2.5v7"/></svg></a>
+                    <a href="https://www.threads.com/@ishavarya_com" aria-label="Threads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M17.5 9.5C16.8 6.4 14.8 4.5 12 4.5c-3.4 0-5.5 2.6-5.5 7.5s2.1 7.5 5.5 7.5c2.6 0 4.5-1.4 4.5-3.5 0-2.2-2-3.2-4.2-3.2-1.8 0-3 .8-3 2 0 1.1 1 1.8 2.3 1.8 2 0 3.100-1.600 3.300-4.500"/></svg></a>
+                    <a href="contact.html" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.500 7 8.500 6.500L20.500 7"/></svg></a>
+                    <a href="contact.html" aria-label="Phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></a>
+                </div>
+                <a class="faq" href="faq.html">Got questions?<br />check out our FAQs</a>
+            </div>
+        </div>
+    </footer>
+    <!-- All Items Modal (Matches Picture 2) -->
+    <div id="all-items-modal" class="modal" hidden>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>All Items in Box (31 Items)</h2>
+                <button type="button" class="modal__close" id="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal__grid">
+                <!-- Items rendered dynamically via JS -->
+            </div>
+        </div>
+    </div>
+    <script src="site.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping bag | Ishavarya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Jaldi:wght@400;700&family=Literata:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="about-page">
+    <header class="about-bar">
+        <a class="about-bar__back" href="index.html" aria-label="Back to home">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.500a5.500 5.500 0 0 1 0 11H11"/></svg>
+        </a>
+        <a class="about-bar__brand" href="index.html">ई&nbsp;&nbsp; श्&nbsp;&nbsp; व&nbsp;&nbsp; र्य</a>
+        <a class="about-bar__link" href="account.html" aria-label="My account">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7"/></svg>
+        </a>
+    </header>
+
+    <main class="page">
+        <h1 class="page__title">Shopping Bag</h1>
+
+        <div class="bag-empty" id="bag-empty" hidden>
+            <p class="bag-empty__title">Your bag is empty</p>
+            <p>Add pooja essentials and festive kits to see them here.</p>
+            <a class="btn" href="index.html#products">Continue shopping</a>
+        </div>
+
+        <div class="bag" id="bag-content" hidden>
+            <ul class="bag__list" id="bag-list"></ul>
+
+            <aside class="bag__summary" aria-labelledby="summary-title">
+                <h2 id="summary-title">Order summary</h2>
+                <dl>
+                    <div><dt>Items</dt>
+                        <dd id="sum-count">0</dd>
+                    </div>
+                    <div><dt>Subtotal</dt>
+                        <dd id="sum-subtotal">₹0</dd>
+                    </div>
+                    <div class="is-total"><dt>Total</dt>
+                        <dd id="sum-total">₹0</dd>
+                    </div>
+                </dl>
+                <button type="button" class="btn btn--block" id="checkout-btn">Proceed to checkout</button>
+                <a class="bag__continue" href="index.html#products">Continue shopping</a>
+            </aside>
+        </div>
+    </main>
+
+    <dialog class="dialog" id="checkout">
+        <form method="dialog" class="dialog__body" id="checkout-form">
+            <h2>Checkout</h2>
+
+            <section>
+                <h3>Deliver to</h3>
+                <div id="checkout-address"></div>
+            </section>
+
+            <section>
+                <h3>Order total</h3>
+                <p class="dialog__total" id="checkout-total">₹0</p>
+                <p class="dialog__note">Payment is not connected yet. Placing an order saves it to My orders in this browser.</p>
+            </section>
+
+            <div class="dialog__actions">
+                <button type="button" class="btn btn--ghost" id="checkout-cancel">Back to bag</button>
+                <button type="submit" class="btn" id="place-order" value="place">Place order</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="site.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
